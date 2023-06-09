@@ -1,0 +1,159 @@
+/* Theme Colors */
+/* Typography */
+/* ---------------------- 1rem = 10px -------------------- */
+/* Borders */
+/* Grid */
+/* Space */
+/* Animation */
+/* Buttons */
+/* Box Shadows */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* <html> = the root */
+html {
+  font-size: 62.5%;
+  /* (62.5/100) * 16px = 10px */
+}
+
+body {
+  font-family: "Visby", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+main {
+  height: 100%;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+menu,
+ol,
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+dialog {
+  border: none !important;
+}
+
+hr {
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  font-family: "Visby", sans-serif;
+  border: none;
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#blob {
+  position: absolute;
+  background-color: #FFFFFF;
+  height: 500px;
+  width: 500px;
+  aspect-ratio: 1;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  -webkit-animation: rotate 20s infinite;
+          animation: rotate 20s infinite;
+}
+@-webkit-keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  50% {
+    scale: 1 1.5;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  50% {
+    scale: 1 1.5;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blur {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px);
+}
+
+main {
+  display: grid;
+  place-items: center;
+  margin: 0rem;
+}
+main header {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main header h1 {
+  color: #FFFFFF;
+  font-size: clamp(3rem, 10vw, 10rem);
+  font-family: "Visby", sans-serif;
+  color: white;
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  letter-spacing: -3px;
+  white-space: nowrap;
+}
+main header h1:hover {
+  background-color: white;
+  color: black;
+}
+main header .wrapper {
+  margin-left: 2rem;
+}
+main header .wrapper p {
+  text-align: left;
+  white-space: nowrap;
+  color: white;
+  font-size: clamp(2rem, 1.25vw, 10rem);
+  letter-spacing: 1rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 1rem;
+}/*# sourceMappingURL=app.css.map */
